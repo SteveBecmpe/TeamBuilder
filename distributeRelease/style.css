@@ -1,0 +1,52 @@
+area{
+    margin: 50px;
+    width: 260px;
+    height: 600px;
+    color: blue;
+
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 550;
+    text-align: center;
+    background-color: rgb(170, 87, 104);
+    color: white;
+    height: 45px;
+    padding: 20px;
+   }
+
+
+
+nav {
+    text-align: center;
+    background-color: rgb(212, 19, 58);
+    font-size: 20px;
+    height: 60px;
+    padding: 20px;
+
+}
+
+.Divcard {
+    margin: 10px;
+    width: 220px;
+    max-width: 220px;
+    height: 400px;
+    color: blue;
+    border-radius: 15px;
+    border-style:solid;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    
+    /* display: inline-block; */
+}
+
+.Divmain{
+
+    margin: auto;
+    width: 80%vw;
+    max-width: 800px;
+
+}
