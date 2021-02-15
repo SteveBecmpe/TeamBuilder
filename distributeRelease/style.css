@@ -11,12 +11,50 @@ h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 550;
     text-align: center;
-    background-color: rgb(170, 87, 104);
+    background-color: rgb(158, 14, 14);
     color: white;
     height: 45px;
     padding: 20px;
    }
 
+.HeadSub{
+    background-color: blue;
+    margin: 0;
+    color: white;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: left;
+    height: 30px;
+}
+.HeadSubSub{
+    background-color: blue;
+    margin: 0;
+    color: white;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+    height: 30px;
+
+}
+
+.DivSub{
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+    height: 20px;
+    padding: 15px;
+    text-align: left;
+}
+
+.DivSubEmail{
+    margin: 5px;
+    border-radius: 15px;
+    background-color: white;
+    height: 35px;
+    padding: 10px;
+    text-align: left;
+}
 
 
 nav {
@@ -29,6 +67,7 @@ nav {
 }
 
 .Divcard {
+    background-color: whitesmoke;
     margin: 10px;
     width: 220px;
     max-width: 220px;
@@ -37,7 +76,7 @@ nav {
     border-radius: 15px;
     border-style:solid;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     float: left;
     
     /* display: inline-block; */
