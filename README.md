@@ -1,3 +1,13 @@
+terminal:
+    npm install
+    npm install inquirer
+
+
+
+
+
+
+
 # 10 Object-Oriented Programming: Team Profile Generator
 
 ## Your Task
