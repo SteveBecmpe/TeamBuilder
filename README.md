@@ -13,10 +13,14 @@ This video shows the command line (terminal) syntax needed to build a team and r
 [![Silent Video of tests](./Assets/NPM_Jest_Tests.webm)](./Assets/NPM_Jest_Tests.webm)     
 
 ## Images
-  
-![mobile](./Assets/StaticHtmlResponsiveAt50percent.JPG)    
+
+![Starter mobile](./Assets/StaticHtmlResponsiveAt50percent.JPG)    
    
-![Static](./Assets/StaticHtmlDesktop.JPG)  
+![Starter Static](./Assets/StaticHtmlDesktop.JPG)   
+
+![Final mobile](./Assets/FinalRenderHtmlFileResponsive.JPG)    
+   
+![Final Index](./Assets/FinalRenderHtmlFile.JPG)   
 
 # 10 Object-Oriented Programming: Team Profile Generator
 
