@@ -1,12 +1,22 @@
-terminal:
-    npm install
-    npm install inquirer
+# 10 Object-Oriented Programming: Team Profile Generator
 
 
+## Link to Team file generated from program.    
+Click the link to view the [Sample Team file](./lib/index.html)    
+   
 
+## Video showing running the program
+NOTE: the micro phone was not working when the video was made. 
+This video shows the command line (terminal) syntax needed to build a team and render a index.html file.     
 
+[![Silent Video of application building a team](./Assets/TeamBuilderDemo.webm)](./Assets/TeamBuilderDemo.webm)    
+[![Silent Video of tests](./Assets/NPM_Jest_Tests.webm)](./Assets/NPM_Jest_Tests.webm)     
 
-
+## Images
+  
+![mobile](./Assets/StaticHtmlResponsiveAt50percent.JPG)    
+   
+![Static](./Assets/StaticHtmlDesktop.JPG)  
 
 # 10 Object-Oriented Programming: Team Profile Generator
 

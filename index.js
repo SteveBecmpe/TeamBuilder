@@ -7,13 +7,7 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 // const generateHtmlfile = require("./lib/generateHTML");
 const generateHtmlContent = require("./lib/Team");
-const generateHtmlContentEnd = require("./lib/Team");
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.appendFile(fileName + 'Test-index.html', generateHtmlfile(data), (err) =>
-        err ? console.error(err) : console.log('Readme File Named ' + '"' + fileName + '-readme.md"' + ' Generated!'));
-}
+// const generateHtmlContentEnd = require("./lib/Team");
 
 const teamMembers = [];
 
@@ -24,24 +18,21 @@ function addTeamMember(data) {
 
 function checkTeamFor(role) {
     let teamArrLength = teamMembers.length;
-    console.log("arr Len " + teamArrLength);
+    // console.log("arr Len " + teamArrLength);
     for (let i = 0; i < teamArrLength; i++) {
         if (teamMembers[i].getRole() === role) {
             return true;
         }
-        // else {
-        //     return false;
-        // }
     }
     return false;
 }
 
 function checkTeamIdFor(id) {
     let teamArrLength = teamMembers.length;
-    console.log("arr Len " + teamArrLength);
+    // console.log("arr Len " + teamArrLength);
     for (let i = 0; i < teamArrLength; i++) {
-        console.log("array ID" + teamMembers[i].getId());
-        console.log("Data ID" + id);
+        // console.log("array ID" + teamMembers[i].getId());
+        // console.log("Data ID" + id);
         if (teamMembers[i].getId() === id) {
             return true;
         }
@@ -143,9 +134,9 @@ function getManager() {
                     console.log("This id is already in use");
                     init();
                 } else {
-                    let manager = new Manager(data.name, 
-                        data.id, 
-                        data.email, 
+                    let manager = new Manager(data.name,
+                        data.id,
+                        data.email,
                         data.phoneNumber);
                     addTeamMember(manager);
                     init();
@@ -155,7 +146,7 @@ function getManager() {
 }
 
 function getEngineer() {
-    console.log("GetEng ");
+    // console.log("GetEng ");
     inquirer
         .prompt(EngineerQuestions)
         .then((data) => {
@@ -164,9 +155,9 @@ function getEngineer() {
                 console.log("This id is already in use");
                 init();
             } else {
-                let engineer = new Engineer(data.name, 
-                    data.id, 
-                    data.email, 
+                let engineer = new Engineer(data.name,
+                    data.id,
+                    data.email,
                     data.github);
                 addTeamMember(engineer);
                 init();
@@ -175,7 +166,7 @@ function getEngineer() {
 }
 
 function getIntern() {
-    console.log("GetIntern ");
+    // console.log("GetIntern ");
     inquirer
         .prompt(InternQuestions)
         .then((data) => {
@@ -193,10 +184,7 @@ function getIntern() {
 
 // TODO: Create a function to initialize app
 function init() {
-    // getManager()
-    // .then(getStarted()).then(console.log(teamMembers))
-    // .then(console.log(teamMembers))
-    console.log(teamMembers);
+    // console.log(teamMembers);
     inquirer
         .prompt(MenuQuestions)
         .then((data) => {
@@ -205,28 +193,21 @@ function init() {
 
             switch (data.choice) {
                 case 'Add Manager':
-                    console.log("Yeah add a manager");
+                    // console.log("Yeah add a manager");
                     getManager();//(data.id)
                     break;
                 case 'Add Engineer':
-                    console.log("Yeah add a engineer ");
+                    // console.log("Yeah add a engineer ");
                     getEngineer();//(data.id)
                     break;
                 case 'Add intern':
-                    console.log("Yeah add a intern");
+                    // console.log("Yeah add a intern");
                     getIntern();
                     break;
                 case 'Finish, Generate Team':
-                    console.log("Yeah finish");
-                    // generateHtmlContent(teamMembers);
+                    // console.log("Yeah finish");
                     fs.writeFile('./distributeRelease/index.html', generateHtmlContent(teamMembers), (err) =>
-                        err ? console.error(err) : console.log('File  Generated!'));
-                    // setTimeout(() => {
-                    //     fs.appendFile('testfile.html', generateHtmlContentEnd(teamMembers), (err) =>
-                    //         err ? console.error(err) : console.log('File appended Generated!'));
-                    // }, 100);
-
-                    // generateHtmlfile(teamMembers);
+                        err ? console.error(err) : console.log('Team HTML File Generated!'));
                     break;
                 default:
                     console.log("Whoops! something went wrong, please try again");
